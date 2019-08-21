@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+    </head>
+
+    <body>
+        <script>
+            var day;
+            var todo;
+            var week = new Date().getDay(); //Date 객체의 getDay함수 ... 0-6까지의 상수값으로 요일 반환
+            switch(week) {
+                case 0:
+                    day = '일요일';
+                    todo = '쉬는 날입니다';
+                    break;
+                case 1:
+                    day = '월요일';
+                    todo = 'js를 공부하는 날입니다.';
+                    break;
+                case 2:
+                    day = '화요일';
+                    todo = 'C언어를 공부하는 날입니다.';
+                    break;
+                case 3:
+                    day = '수요일';
+                    todo = 'Django를 공부하는 날입니다.';
+                    break;
+                case 4:
+                    day = '목요일';
+                    todo = '영어를 공부하는 날입니다.';
+                    break;
+                case 5:
+                    day = '금요일';
+                    todo = 'python을 공부하는 날입니다.';
+                    break;
+                case 6:
+                    day = '토요일';
+                    todo = '바람쐬러 나가는 날입니다.';
+                    break;
+            }
+            document.write("오늘은 "+day+" 입니다. <br>" + todo);
+        </script>
+    </body>
+</html>

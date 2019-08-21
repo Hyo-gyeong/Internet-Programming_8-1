@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <script>
+            var text1 = '함수 호출 전';
+            var text2 = '함수 호출 후';
+            texts(text1);
+            function texts(msg) {
+                document.write("함수 호출: " + msg +"<br>");
+            }
+            texts(text2);
+        </script>
+        <script>
+            var name;
+            var age;
+            var like;
+            var fruit;
+            function hiddenmsg(name, age, like, fruit) {
+                document.write("이름 : " + name + "<br>");
+                document.write("나이 : " + age + "<br>");
+                document.write("좋아하는 것 : " + like + "<br>");
+                document.write("좋아하는 과일 : " + fruit + "<br>");
+            }
+        </script>
+        <!--버튼 클릭시 함수내용이 새로운 페이지에 쓰임(뒤로가기 없이) , 새로고침 필요!-->
+        <br><button type="button" onclick="hiddenmsg('신효경', 23, '발라드', '수박')">개인 정보</button> <!--char형태 따옴표 표시 주의!-->
+    </body>
+</html>
